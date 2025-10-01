@@ -1,38 +1,54 @@
-.App {
-  text-align: center;
+.app-container {
+    min-height: 100vh;
+    background-color: #fff8dc;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 24px;
+    font-family: Arial, sans-serif;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.title {
+    font-size: 20px; font-weight: bold; margin-bottom: 12px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.big-rectangle {
+    width: 500px;
+    height: 300px;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+    margin-bottom: 14px;
+    background-color: white;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.instruction {
+    margin-bottom: 12px; font-weight: 500;
 }
 
-.App-link {
-  color: #61dafb;
+.sliders {
+    width: 360px; display: flex; flex-direction: column; gap: 12px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.slider-row {
+    display: flex; align-items: center; gap: 12px;
+}
+
+.slider-label {
+    width: 20px; font-weight: bold;
+}
+
+.slider-wrapper {
+    flex: 1;
+}
+
+.slider-value {
+    width: 44px; text-align: right; font-weight: 600;
+}
+
+.save-button {
+    margin-top: 14px;
+    background-color: #cd853f !important;
+    color: white !important;
+    border-radius: 14px !important;
+    text-transform: none !important;
 }
